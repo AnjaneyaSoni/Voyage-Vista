@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "809758405212",
+    "project_id": "voyage-vista-e4787",
+    "storage_bucket": "voyage-vista-e4787.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:809758405212:android:48befea4677a45ced42c99",
+        "android_client_info": {
+          "package_name": "com.example.oopsproject1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCQelp56N_RiQ_iMTbfhHzs_xYCcp-Ggz0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
