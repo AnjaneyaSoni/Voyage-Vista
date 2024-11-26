@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home1.dart'; // Make sure to import HomeScreen
+import 'signin.dart'; // Import SignInPage
 
 class WelcomeScreen extends StatelessWidget {
   @override
@@ -13,14 +13,16 @@ class WelcomeScreen extends StatelessWidget {
             height: MediaQuery.of(context).size.height * (2 / 3), // Take two-thirds of the screen height
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: NetworkImage('https://images.unsplash.com/photo-1719139962223-f62b591aee2c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VqYXJhdCUyMHRvdXJpc218ZW58MHx8MHx8fDA%3D'), // Load image from the network
+                image: NetworkImage(
+                  'https://images.unsplash.com/photo-1719139962223-f62b591aee2c?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z3VqYXJhdCUyMHRvdXJpc218ZW58MHx8MHx8fDA%3D',
+                ), // Load image from the network
                 fit: BoxFit.cover,
               ),
             ),
           ),
           // Lower One-Third Text and Button
           Expanded(
-            child: SingleChildScrollView( // Added scroll view to avoid overflow
+            child: SingleChildScrollView(
               padding: const EdgeInsets.all(20.0), // Add padding to the content
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -47,10 +49,10 @@ class WelcomeScreen extends StatelessWidget {
                   SizedBox(height: 24),
                   ElevatedButton(
                     onPressed: () {
-                      // Navigate to HomeScreen when button is pressed
+                      // Navigate to SignInPage when button is pressed
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => HomeScreen()),
+                        MaterialPageRoute(builder: (context) => SignInPage()),
                       );
                     },
                     style: ElevatedButton.styleFrom(

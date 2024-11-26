@@ -15,3 +15,4 @@ class MyApp extends StatelessWidget {
       home: WelcomeScreen(), // Correctly reference the Login1Screen widget
       debugShowCheckedModeBanner: false,
     );
+  }}
